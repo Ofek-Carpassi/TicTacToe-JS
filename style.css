@@ -1,0 +1,68 @@
+/* Styling for the entire body of the page */
+body {
+    background: black; /* Background color */
+    color: white; /* Text color */
+    font-family: 'Courier New', Courier, monospace; /* Font family */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+/* Styling for the game board */
+#board {
+    display: grid; /* Use grid for layout */
+    gap: 10px; /* Gap between grid cells */
+    width: 300px; /* Width of the board */
+    height: 300px; /* Height of the board */
+}
+
+/* Styling for each cell of the game board */
+#board div {
+    background: #111; /* Background color */
+    border: 1px solid #0f0; /* Border color and width */
+    color: #0f0; /* Text color */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    font-size: 2em; /* Text size */
+    transition: color 0.5s, border-color 0.5s; /* Transition animation for color and border color */
+}
+
+/* Styling for a cell of the game board when it's hovered over */
+#board div:empty:hover {
+    border-color: #f0f; /* Border color when hovered */
+    color: #f0f; /* Text color when hovered */
+}
+
+/* Styling for the reset button */
+#reset {
+    display: block; /* Display as block element */
+    width: 100px; /* Width of the button */
+    margin: 20px auto; /* Margin around the button */
+    padding: 10px; /* Padding inside the button */
+    background: #111; /* Background color */
+    border: 1px solid #0f0; /* Border color and width */
+    color: #0f0; /* Text color */
+    text-align: center; /* Center text */
+    transition: all 0.5s; /* Transition animation for all properties */
+}
+
+/* Styling for the reset button when it's hovered over */
+#reset:hover {
+    border-color: #f0f; /* Border color when hovered */
+    color: #f0f; /* Text color when hovered */
+}
+
+/* Styling for the reset button when it's clicked */
+#reset:active {
+    transform: scale(0.9); /* Scale down the button */
+}
+
+/* Styling for the game status message */
+#message {
+    color: #0f0; /* Text color */
+    font-size: 1.5em; /* Text size */
+    text-align: center; /* Center text */
+}
