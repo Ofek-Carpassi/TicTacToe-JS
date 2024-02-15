@@ -21,8 +21,8 @@ body {
 /* Styling for each cell of the game board */
 #board div {
     background: #111; /* Background color */
-    border: 1px solid #0f0; /* Border color and width */
-    color: #0f0; /* Text color */
+    border: 1px solid rgb(0, 200, 255); /* Border color and width */
+    color: rgb(0, 200, 255); /* Text color */
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Center text vertically */
     justify-content: center; /* Center text horizontally */
@@ -32,8 +32,8 @@ body {
 
 /* Styling for a cell of the game board when it's hovered over */
 #board div:empty:hover {
-    border-color: #f0f; /* Border color when hovered */
-    color: #f0f; /* Text color when hovered */
+    border-color: rgb(195, 0, 255); /* Border color when hovered */
+    color: rgb(195, 0, 255); /* Text color when hovered */
 }
 
 /* Styling for the reset button */
@@ -43,16 +43,16 @@ body {
     margin: 20px auto; /* Margin around the button */
     padding: 10px; /* Padding inside the button */
     background: #111; /* Background color */
-    border: 1px solid #0f0; /* Border color and width */
-    color: #0f0; /* Text color */
+    border: 1px solid rgb(0, 200, 255); /* Border color and width */
+    color: rgb(0, 200, 255); /* Text color */
     text-align: center; /* Center text */
     transition: all 0.5s; /* Transition animation for all properties */
 }
 
 /* Styling for the reset button when it's hovered over */
 #reset:hover {
-    border-color: #f0f; /* Border color when hovered */
-    color: #f0f; /* Text color when hovered */
+    border-color: rgb(195, 0, 255); /* Border color when hovered */
+    color: rgb(195, 0, 255); /* Text color when hovered */
 }
 
 /* Styling for the reset button when it's clicked */
@@ -62,7 +62,15 @@ body {
 
 /* Styling for the game status message */
 #message {
-    color: #0f0; /* Text color */
+    color: rgb(0, 200, 255); /* Text color */
     font-size: 1.5em; /* Text size */
     text-align: center; /* Center text */
+}
+
+/* Styling for the current player */
+#player {
+    color: rgb(0, 200, 255); /* Text color */
+    font-size: 1em; /* Text size */
+    text-align: center; /* Center text */
+    margin-top: 10px; /* Margin on top */
 }
